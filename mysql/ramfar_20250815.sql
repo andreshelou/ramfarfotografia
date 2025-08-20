@@ -15,6 +15,20 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+
+
+CREATE DATABASE IF NOT EXISTS ramfar;
+
+USE ramfar;
+
+CREATE USER 'ramfar'@'%' IDENTIFIED BY 'R4mF4rP455';
+
+-- Se separan la creación y los permisos
+GRANT ALL PRIVILEGES ON ramfar.* TO 'ramfar'@'%';
+
+
+FLUSH PRIVILEGES;
+
 --
 -- Table structure for table `contacto`
 --
